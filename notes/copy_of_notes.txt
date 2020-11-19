@@ -1,0 +1,100 @@
+    1  git config --global user.name "Howard Gilmore"
+    2  git config --global user.email "howardgg1997@gmail.com"
+    3  git fetch
+    4  git pull
+    5  git config --global user.name "Howard Gilmore"
+    6  git config --global user.email "Howardgg1997@gmail.com"
+    7  $ ssh-keygen -t ed25519 -C "howardgg1997@gmail.com"
+    8  ssh-keygen -t ed25519 -C "howardgg1997@gmail.com"
+    9  env=~/.ssh/agent.env
+   10  agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }
+   11  agent_start () {     (umask 077; ssh-agent >| "$env");     . "$env" >| /dev/null ; }
+   12  agent_load_env
+   13  # agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running
+   14  agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
+   15  if [ ! "$SSH_AUTH_SOCK" ] || [ $agent_run_state = 2 ]; then     agent_start;     ssh-add; elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then     ssh-add; fi
+   16  unset env
+   17  $ clip < ~/.ssh/id_rsa.pub
+   18  ssh-add ~/.ssh/id_ed25519
+   19  clip < ~/.ssh/id_ed25519
+   20  clip < ~/.ssh/id_ed25519
+   21  -----BEGIN OPENSSH PRIVATE KEY-----
+   22  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+   23  QyNTUxOQAAACCC1uPO98wtB+CEA7uH9cZmujgIUc4v4twnfj6AdChRWwAAAKCCKGaigihm
+   24  ogAAAAtzc2gtZWQyNTUxOQAAACCC1uPO98wtB+CEA7uH9cZmujgIUc4v4twnfj6AdChRWw
+   25  AAAEBab9vn12p6jTIOqxvLotIITqVdsVL8f1/Q0iGxekskB4LW4873zC0H4IQDu4f1xma6
+   26  OAhRzi/i3Cd+PoB0KFFbAAAAFmhvd2FyZGdnMTk5N0BnbWFpbC5jb20BAgMEBQYH
+   27  -----END OPENSSH PRIVATE KEY-----
+   28  clip < ~/.ssh/id_ed25519
+   29  -----BEGIN OPENSSH PRIVATE KEY-----
+   30  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+   31  QyNTUxOQAAACCC1uPO98wtB+CEA7uH9cZmujgIUc4v4twnfj6AdChRWwAAAKCCKGaigihm
+   32  ogAAAAtzc2gtZWQyNTUxOQAAACCC1uPO98wtB+CEA7uH9cZmujgIUc4v4twnfj6AdChRWw
+   33  AAAEBab9vn12p6jTIOqxvLotIITqVdsVL8f1/Q0iGxekskB4LW4873zC0H4IQDu4f1xma6
+   34  OAhRzi/i3Cd+PoB0KFFbAAAAFmhvd2FyZGdnMTk5N0BnbWFpbC5jb20BAgMEBQYH
+   35  -----END OPENSSH PRIVATE KEY-----
+   36  ssh-add ~/.ssh/id_ed25519.pub
+   37  clip < ~/.ssh/id_ed25519.pub
+   38  whoami
+   39  pwd
+   40  atilda
+   41  reset
+   42  whoami
+   43  pwd
+   44  ls
+   45  cd/
+   46  cd /
+   47  cd ~
+   48  ls -l
+   49  ls -lh
+   50  ls -lha
+   51  man ls
+   52  manual ls
+   53  start q
+   54  start .
+   55  start desktop
+   56  start .desktop
+   57  start .Desktop
+   58  echo "Hello World!"
+   59  echo "You aint Shit"
+   60  echo ~
+   61  help
+   62  q
+   63  cd ..
+   64  cd home
+   65  cd ~
+   66  pwd
+   67  ls
+   68  cd ..
+   69  pwd
+   70  ls
+   71  cd .
+   72  pwd
+   73  cd /
+   74  pwd
+   75  pwd
+   76  ls
+   77  cd home
+   78  cd ~
+   79  clear
+   80  cd WorldofWarcraft
+   81  ls
+   82  cd Documents/My\ ls My Pictures
+   83  cd My Pictures
+   84  cd MyPictures
+   85  cd Pictures
+   86  clear
+   87  mkdir Projects
+   88  pwd
+   89  cd Projects
+   90  ls
+   91  mkdir notes
+   92  cd notes
+   93  touch notes.txt
+   94  start notes.txt
+   95  cat notes.txt
+   96  cat notes.txt
+   97  rm notes.txt
+   98  ls
+   99  history
+  100  history > notes.txt
